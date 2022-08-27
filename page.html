@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>css-task</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: rgb(237, 236, 236);
+            padding: 0%;
+            margin: 0%;
+        }
+
+        header {
+            height: 70px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        header .col-2 .logo{
+            font-family: serif;
+            font-weight: bold;
+        } 
+
+        header nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header .col-2 {
+            margin: 5px;
+            padding: 5px;
+            width: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        header .col-4:last-child {
+            padding: 20px;
+        }
+
+        header .col-6 {
+            width: 80%;
+        }
+
+        header .col-4 {
+            width: 10%;
+            display: flex;
+            justify-content: right;
+        }
+
+        header nav a {
+            padding: 8px;
+            text-decoration: none;
+            font-size:17px;
+            color:black;
+            font-weight:bold;
+        }
+
+        .section1 {
+            height: 400px;
+            width: 100%;
+            position: relative;
+        }
+
+        .section1 img {
+            opacity: 0.8;
+        }
+
+        .section1 .imgfloat {
+            width: 40%;
+            position: absolute;
+            top: 110px;
+            padding-left: 150px;
+            color: white;
+        }
+        .section1 .font1{
+            font-weight: bolder;
+            font-size:20px;
+        }
+        .section1 .font2{
+           font-weight:bolder;
+           font-size:40px;
+           font-family: sans-serif;
+        }
+        .section1 .font3{
+            color:lightgrey;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+        button {
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .bcolor1 {
+            background-color: lightsalmon;
+            border-color: transparent;
+            font-weight: bold;
+            padding:15px;
+            padding-left:42px;
+            padding-right:42px;
+
+        }
+
+        .bcolor2 {
+            background-color: transparent;
+            border-color: transparent;
+            border-color: lightgrey;
+            border-radius: 0.2px;
+            color:white;
+            font-weight:bold;
+            padding:15px;
+            padding-left:40px;
+            padding-right:40px;
+        }
+
+        .section2 {
+            height: 450px;
+            position: relative;
+
+        }
+
+        .section2 .part1 {
+            width: 50%;
+            float: left;
+        }
+
+        .section2 .part1 img {
+            margin-top: 60px;
+            margin-left: 150px;
+        }
+
+        .section2 .part2 {
+            padding: 0px;
+            width: 50%;
+            float: left;
+
+        }
+        .section2 .part2 .f1{
+            font-weight:bolder;
+            color:grey;
+        }
+
+        .section2 .part2 .start {
+            margin-top: 40px;
+            padding: 5px;
+            padding-right: 150px;
+        }
+        .section2 .part2 .f2{
+            color:grey;
+            font-family: serif;
+        }
+        .section2 .grid .dark{
+            font-family: serif;
+            font-weight: bolder;
+            font-size:15px;
+            margin:0px;
+        }
+        .b1 {
+            background-color: white;
+            border-radius: 5px;
+            border-color: white;
+
+        }
+
+        .b2 {
+
+            background-color: white;
+            border-radius: 8px;
+            border-color: white;
+            padding: 20px;
+
+        }
+
+        .logo {
+            padding: 10px;
+            font-size:25px;
+        }
+
+        .s2text {
+            font-size: 50px;
+            margin: 0px;
+            font-weight: bolder;
+            font-family: sans-serif;
+        }
+
+        .section3 {
+            height: 200px;
+
+
+        }
+
+        .s3text {
+            background-color: white;
+            height: 200px;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 80px;
+        }
+
+        .imgfloat2 {
+            position: absolute;
+            top: 930px;
+            width: 20%;
+            padding-left: 880px;
+        }
+
+        .section3 .s3textp {
+            font-size: 40px;
+            margin: 0px;
+            padding-left: 200px;
+            font-weight: bolder;
+            padding-right: 350px;
+            font-family: serif;
+        }
+
+        .section3 .shortt {
+            padding-top: 30px;
+            padding-left: 200px;
+            color: grey;
+            font-weight: lighter;
+            font-family: serif;
+        }
+
+        .section4 {
+            height: 400px;
+            background-color: white;
+        }
+
+        .section4 .s4text {
+            padding-top: 50px;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 60px;
+        }
+
+        .section4 .s4bold {
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+        .section4 .s4lite {
+            color: gray;
+            font-family: serif;
+            font-size:17px;
+        }
+
+        .grid-container {
+
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin-left: 60px;
+            margin-right: 150px;
+
+        }
+
+        .grid-item {
+            padding: 20px;
+            text-align: center;
+            color: gray;
+            font-family: sans-serif;
+        }
+
+        .section5 {
+            height: 420px;
+            position: relative;
+
+        }
+
+        .section5 .s5 {
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 80px;
+        }
+
+        .section5 .s5 img {
+            border-radius: 2%;
+        }
+
+        .section5 .s5text {
+            background-color: white;
+            margin: 0px 200px;
+            height: 60px;
+            padding: 8px;
+            border-radius: 2%;
+            position: absolute;
+            top: 260px;
+            width: 65%;
+        }
+
+        .section5 .s5text .flex-container {
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            justify-content: center;
+        }
+
+        .section5 .s5text .flex-container .flex-container1 {
+            width: 70%;
+            margin: 0px 20px;
+            padding: 0px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+
+        }
+
+        .section5 .s5text .flex-container .flex-container1 div {
+            padding: 0px 30px;
+        }
+
+        .section5 .s5text .flex-container .flex-container1 .p1 {
+            color: gray;
+            font-family: sans-serif;
+        }
+
+        .section5 .s5text .flex-container .flex-container1 .p2 {
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .section5 .s5text .flex-container .flex-container2 .bcode {
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+
+        }
+
+        .section6 {
+            height: 500px;
+            background-color: rgba(17, 14, 27, 0.815);
+        }
+
+        .section6 .s6p2 {
+            margin-left: 150px;
+            margin-right: 100px;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+
+        }
+
+        .section6 .s6p1 {
+            padding-top: 30px;
+            margin-left: 150px;
+            margin-right: 100px;
+        }
+
+        .section6 .s6p2 .s6txt {
+            height: 300px;
+            width: 30%;
+            background-color: white;
+            border-radius: 5px;
+            margin: 8px;
+            position: relative;
+        }
+        .section6 .s6p2 .s6txt i{
+            position: absolute;
+            right:50px;
+            bottom:110px;
+            color: gray;
+        }
+        .section6 .s6p1 .p3 {
+            color: lightgrey;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .section6 .s6p1 .p4 {
+            margin: 5px;
+            color: white;
+            font-size: 55px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .section6 .part1 {
+            padding: 25px;
+            color: gray;
+            font-family: sans-serif;
+            padding-bottom: 0px;
+        }
+
+        .section6 .part2 {
+            display: flex;
+            align-items: center;
+        }
+           
+        .section6 .part2 .name1{
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 20px;
+
+
+        }
+        .section6 .part2 .name2{
+            font-family: sans-serif;
+            color:gray;
+        }
+        .section6 .part2 .pic1 {
+            padding: 20px;
+            width: 30%;
+        }
+
+        .section6 .part2 .pic1 img {
+            border-radius: 50%;
+        }
+
+        .section6 .part2 .cont1 {
+            width: 70%;
+        }
+
+        .section7 {
+            height: 600px;
+            background-color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .section7 .s7txt {
+            background-color: azure;
+            margin: 0px 150px;
+            height: 550px;
+
+        }
+
+        .section7 .s7txt .s7txt-div {
+            height: 50px;
+            background-color: white;
+        }
+
+        .section7 .s7txt .s7txt-div2 {
+           margin:50px;
+        }
+        .section7 .details{
+            display:flex;
+        }
+        .section7 .details .dspace{
+            padding-top:5px;
+            padding-left:5px;
+            width:30%;
+            background-color: white;
+            height:30px;
+            margin:10px;
+            border-radius: 5%;
+            color:gray;
+        }
+        .section7 .wdetails{
+            height:150px;
+            width:95%;
+            background-color: white;
+            padding-top:5px;
+            padding-left:5px;
+            margin-left:15px;
+            border-radius: 5%;
+            color:gray;
+        }
+        .section7 .bs7{
+            color: white;
+            background-color: black;
+            margin-left:730px;
+            margin-top:30px;
+            border-radius: 10%;
+            font-family:sans-serif;
+            padding-left:15px;
+            padding-right:15px;
+        }
+        .section7 .pfont{
+            color:gray;
+            font-weight: bolder;
+            padding-left:10px;
+        }
+        .section7 .hfont{
+            font-size:41px;
+            padding-left:10px;
+            font-weight: bolder;
+            font-family: sans-serif;
+        }
+        .section8{
+            height:400px;
+        }
+        .section8 iframe{
+            height:400px;
+            width:100%;
+        }
+        footer{
+            background-color: black;
+            height:60px;
+            padding-top: 4px;
+            text-align: center;
+        }
+        footer .foot{
+            color:white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="col-2">
+            <i class="fa fa-shield"></i>
+            <p class="logo">Logo</p>
+        </div>
+        <div class="col-6">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+        <div class="col-4">
+            <button class="b1"><i class="fa fa-facebook"></i></button>
+            <button class="b1"><i class="fa fa-instagram"></i></button>
+            <button class="b1"><i class="fa fa-twitter"></i></button>
+        </div>
+    </header>
+    <div class="section1">
+        <img src="s1img.jpg" height="400px " width="100%" />
+        <div class="imgfloat">
+            <p class="font1">Developer Company</p>
+            <h1 class="font2">Software App</h1>
+            <p class="font3">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley to type specimen book</p>
+            <button class="bcolor1">Our Services</button>
+            <button class="bcolor2">Learn More</button>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="part1">
+            <img src="bimg.jpg" height=400px width=60% />
+        </div>
+        <div class="part2">
+            <div class="start">
+                <p class="f1">Core Features</p>
+                <p class="s2text">Best Business Software Solution</p><br>
+                <div class="grid">
+                    <button class="b2"><i class="fa fa-paint-brush"></i><br><br><p class="dark">Design</p></button>
+                    <button class="b2"><i class="fa fa-thumbs-o-up"></i><br><br><p class="dark">Usage</p></button>
+                    <button class="b2"><i class="fa fa-twitter"></i><br><br><p class="dark">Testing</p></button>
+                </div>
+                <p class="f2">Lorem ipsum dolor sit adipiscing elit. Accumsan portitor agestas fermentum nulla.
+                </p>
+                <button class="bcolor1">Read More</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="section3">
+        <div class="s3text">
+            <p class="shortt">App Download</p>
+            <p class="s3textp">You can control directly from your mobile.</p>
+        </div>
+        <div class="imgfloat2">
+            <img src="imagen.jpg" height="260px" width="200px" />
+        </div>
+    </div>
+    <div class="section4">
+        <div class="s4text">
+            <p class="s4bold">Our Goal</p>
+            <p class="s4lite">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item"><i class="fa-check-circle-o"></i>App Design & Research</div>
+            <div class="grid-item"><i class="fa-check-circle-o"></i>Development & Testing</div>
+            <div class="grid-item"><i class="fa-check-circle-o"></i>App Design & Research</div>
+            <div class="grid-item"><i class="fa-check-circle-o"></i>Development & Testing</div>
+            <div class="grid-item"><i class="fa-check-circle-o"></i>App Design & Research</div>
+            <div class="grid-item"><i class="fa-check-circle-o"></i>Development & Testing</div>
+        </div>
+    </div>
+    <div class="section5">
+        <div class="s5">
+            <img src="s4img.png" height="300px" width="100%" />
+        </div>
+        <div class="s5text">
+            <div class="flex-container">
+                <div class="flex-container1">
+                    <div class="p1">Clients</div>
+                    <div class="p1">Services</div>
+                    <div class="p1">Durations</div>
+                    <div class="p1">Tools</div>
+                    <div class="p2">Art Museum</div>
+                    <div class="p2">Website</div>
+                    <div class="p2">10-30Days</div>
+                    <div class="p2">Figma</div>
+                </div>
+
+                <div class="flex-container2"><button class="bcode">Preview</button></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="section6">
+        <div class="s6p1">
+            <p class="p3">Testimonials</p>
+            <p class="p4">Our Client Feedbacks</p>
+        </div>
+        <div class="s6p2">
+            <div class="s6txt">
+                <div class="part1">
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="part2">
+                    <div class="pic1">
+                        <img src="eng1.jpg" height="58px" width="58px" />
+                    </div>
+                    <div class="cont1">
+                        <p class="name1">John Smith</p>
+                        <p class="name2">Programmer</p>
+                    </div>
+                </div>
+                <i class="fa fa-quote-right"></i>
+            </div>
+            <div class="s6txt">
+                <div class="part1">
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="part2">
+                    <div class="pic1">
+                        <img src="eng2.jpg" height="58px" width="58px" />
+                    </div>
+                    <div class="cont1">
+                        <p class="name1">Sarah Palmer</p>
+                        <p class="name2">Manager</p>
+                    </div>
+                </div>
+                <i class="fa fa-quote-right"></i>
+            </div>
+            <div class="s6txt">
+                <div class="part1">
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="part2">
+                    <div class="pic1">
+                        <img src="eng3.jpg" height="58px" width="58px"  />
+                    </div>
+                    <div class="cont1">
+                        <p class="name1">Adam Swift</p>
+                        <p class="name2">Designer</p>
+                    </div>
+                </div>
+                <i class="fa fa-quote-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="section7">
+
+        <div class="s7txt">
+            <div class="s7txt-div"></div>
+            <div class="s7txt-div2">
+                <p class="pfont">Estimate For Projects</p>
+                <p class="hfont">Share Work Details</p>
+                <div class="details">
+                    <div class="dspace">Full name</div>
+                    <div class="dspace">Email adress</div>
+                    <div class="dspace">Subject</div>
+                </div>
+                <div class="wdetails">
+                    <p>Work Details</p>
+                </div>
+                <button class="bs7">Subscribe Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="section8">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5291590623638!2d78.38442001487701!3d17.43436928805044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb972fe66d4711%3A0x7f2d27691ca15313!2sInorbit%20Mall%20Cyberabad!5e0!3m2!1sen!2sin!4v1657400754904!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>
+    <p class="foot"><i class="fa fa-twitter"></i>Copyright 2025 Brand-All Rights Reserved</p>
+    </footer>
+</body>
+</html>
